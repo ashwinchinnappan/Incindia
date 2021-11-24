@@ -85,11 +85,11 @@ function valid(){
   var repass = document.form2.rpass.value;
   
   if(name1=="" || name1 == null || name1 <8){
-  alert("Enter valid First Name..!!");
+  alert("Enter First Name..!!");
   return false;
   }
   if(name2=="" || name2 == null || name2 <8){
-    alert("Enter valid Last Name..!!");
+    alert("Enter Last Name..!!");
     return false;
     }
   if(mail1=="" || mail1 == ".com"){
@@ -128,6 +128,9 @@ function valid(){
       if(psw=="12345"){
         alert("You have logged in successfully..");
       }
-
+    else{
+      alert("Invalid Login credentials.!!");
+      return false;
+    }
     }
   }
