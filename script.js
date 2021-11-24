@@ -121,3 +121,13 @@ function valid(){
       return;
     }
   }
+  function vali(){
+    var user = document.form3.use.value;
+    var psw = document.form3.pas.value;
+    if(user=="ashwin" || user=="eswar"|| user=="hemant"|| user=="sathya"|| user=="manoj"|| user=="sai"){
+      if(psw=="12345"){
+        alert("You have logged in successfully..");
+      }
+
+    }
+  }
