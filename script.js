@@ -3,7 +3,7 @@ function val(){
   var guest = document.form.guess.value;
   var arrival = document.form.arr.value;
   var leving = document.form.lev.value;
-  
+  var hotel = document.form.stay.value;
   if(where ==""){
     alert("You should enter the Destination..!");
     return false;
@@ -31,6 +31,14 @@ function val(){
     alert("You should enter leaving date..!");
     return false;
   }
+  if(hotel==0){
+    alert("Select Hotel stay option..");
+    return false;
+
+  }
+  else{
+    alert("You have Booked successfully..")
+  }
   }
 function validate(){
 var uname = document.form1.name.value;
@@ -54,7 +62,9 @@ if(sub==""){
 alert("Enter Subject..");
 return false;
 }
-
+else{
+  alert("You have subscribed successfully..");
+}
 }
 jQuery(document).ready(function($){
   var $slickElement = $('.slideshow');
@@ -65,3 +75,49 @@ jQuery(document).ready(function($){
   });
 
 });
+function valid(){
+  var name1 = document.form2.fname.value;
+  var name2 = document.form2.lname.value;
+  var mail1 = document.form2.email1.value;
+  var number1 = document.form2.phone1.value;
+  var gen = document.form2.gender.value;
+  var pswd = document.form2.pass.value;
+  var repass = document.form2.rpass.value;
+  
+  if(name1=="" || name1 == null || name1 <8){
+  alert("Enter valid First Name..!!");
+  return false;
+  }
+  if(name2=="" || name2 == null || name2 <8){
+    alert("Enter valid Last Name..!!");
+    return false;
+    }
+  if(mail1=="" || mail1 == ".com"){
+  alert("Enter valid mail");
+  return false;
+  }
+  if(number1==""){
+  alert("Enter valid Phone number");
+  return false;
+  }
+  if(gen == 0){
+  alert("Select Gender..");
+  return false;
+  }
+  if(pswd == ""){
+    alert("Invalid Password");
+    return false;
+  }
+  if(repass == "" || repass.length<10){
+    alert("Invalid RePassword");
+    return false;
+  }
+  if(pswd!==repass){
+      alert("Password and Repassword doesnt match..");
+      return false;
+    }
+    else{
+      alert("You have registered successfully.");
+      return;
+    }
+  }

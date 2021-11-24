@@ -62,7 +62,7 @@
     <div class="content">
         <h3>incredible India</h3>
         <p>Awaits for You..</p>
-        <input type="button" class="btn" onclick="" value="Register Now">
+        <input type="button" class="btn" onclick="window.location.href='reg.html'" value="Register Now" >
     </div>
 
     <div class="video-container">
@@ -94,7 +94,7 @@
             <img src="images/book-img.svg" alt="">
         </div>
 
-        <form method="post" name="form" onsubmit="return val()" action="success.html">
+        <form method="get" name="form" onsubmit="return val()" action="index.html">
             <div class="inputBox">
                 <h3>Destination</h3>
                 <input type="text" placeholder="place name" id="whre" name="whre">
@@ -115,8 +115,8 @@
                 <h3>Hotel Stay</h3>
                <select name="stay">
                    <option value="0">Select "Yes" or "No"</option>
-                   <option value="">Yes</option>
-                   <option value="">No</option>
+                   <option value="1">Yes</option>
+                   <option value="2">No</option>
                </select>
             </div>
             <input type="submit" class="btn" value="submit">
@@ -583,7 +583,7 @@
             <img src="images/contact-img.svg" alt="">
         </div>
 
-        <form action="" method="post" name="form1" onsubmit="return validate()">
+        <form action="index.html" method="get" name="form1" onsubmit="return validate()">
             <div class="inputBox">
                 <input type="text" placeholder="Name" name="name">
                 <input type="email" placeholder="Email" name="email">
