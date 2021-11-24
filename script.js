@@ -3,7 +3,6 @@ function val(){
   var guest = document.form.guess.value;
   var arrival = document.form.arr.value;
   var leving = document.form.lev.value;
-  var sel = document.form.stay.value;
   
   if(where ==""){
     alert("You should enter the Destination..!");
@@ -32,10 +31,6 @@ function val(){
     alert("You should enter leaving date..!");
     return false;
   }
-  if(sel.value== '0'){
-    alert("You should select Hotel stay");
-    return false;
-  }
   }
 function validate(){
 var uname = document.form1.name.value;
@@ -61,12 +56,12 @@ return false;
 }
 
 }
-$('#show').on('click', function () {
-  $('.center').show();
-  $(this).hide();
-})
+jQuery(document).ready(function($){
+  var $slickElement = $('.slideshow');
 
-$('#close').on('click', function () {
-  $('.center').hide();
-  $('#show').show();
-})
+  $slickElement.slick({
+    autoplay: true,
+    dots: false,
+  });
+
+});
