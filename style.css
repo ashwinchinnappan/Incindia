@@ -225,8 +225,8 @@ header .search-bar-container label:hover{
   cursor: pointer;
 }
 
-#menu-bar{
-  color:#fff;
+.menu-bar{
+  color:rgb(245, 239, 239);
   border:.1rem solid #fff;
   border-radius: .5rem;
   font-size: 3rem;
@@ -253,7 +253,7 @@ header .search-bar-container label:hover{
   font-size: 4.5rem;
   color:#fff;
   text-transform: uppercase;
-  text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  text-shadow: 0 .3rem .5rem rgba(245, 244, 244, 0.1);
 }
 
 .home .content p{
@@ -661,8 +661,8 @@ header .search-bar-container label:hover{
   header .navbar{
     position: absolute;
     top:100%; right:0; left: 0;
-    background: #333;
-    border-top: .1rem solid rgba(255,255,255,.2);
+    background: rgb(248, 245, 245);
+    border-top: .1rem solid rgb(253, 253, 253);
     padding:1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
@@ -676,7 +676,7 @@ header .search-bar-container label:hover{
     border-radius: .5rem;
     padding:1.5rem;
     margin:1.5rem 0;    
-    background:#222;
+    background:rgb(245, 238, 238);
   }
 
 }
